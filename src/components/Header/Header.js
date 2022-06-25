@@ -24,12 +24,12 @@ function Header () {
             <h3>
                 <NavLink 
                 className="nav-link"
-                to='/analytics'>Analytics</NavLink>
+                to='/achievements'>Achievements</NavLink>
             </h3>
             <h3>
                 <NavLink 
                 className="nav-link"
-                to='/achievements'>Achievements</NavLink>
+                to='/forum'>Forum</NavLink>
             </h3>
         </nav>
     )
