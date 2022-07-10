@@ -60,6 +60,7 @@ const Achievements = () => {
 
     const logUserInputSelection = (e) => {
         setCurrentTileSelected(() => e.target.value)
+        setCurrentTitleSearched(() => "")
     }
 
     const resetUserInputSelection = (e) => {
@@ -107,7 +108,7 @@ const Achievements = () => {
                     {currentPosts.map((post) => {
                         if (post.title == currentTitleSelected & currentTitleSelected != "") {
                         return <Post 
-                            email={post['email']}
+                            displayName={post['displayName']}
                             title={post['title']}
                             body={post['body']}
                             id={post['id']}
@@ -117,7 +118,7 @@ const Achievements = () => {
                         />
                         } else if (currentTitleSelected == "" ) {
                             return <Post 
-                            email={post['email']}
+                            displayName={post['displayName']}
                             title={post['title']}
                             body={post['body']}
                             id={post['id']}
